@@ -1,0 +1,370 @@
+
+<script type="text/javascript"> 
+		window.onerror = function(message, url, line) {
+			return true;
+		};
+	</script>
+	<script type="text/javascript"> 
+		var ebayItemID='150981856420';
+		var ebayItemRevisionTime='0';
+		var ebayAskSellerURL='http://contact.ebay.com/ws/eBayISAPI.dll?ShowSellerFAQ&iid=150981856420&requested=mrrackables&redirect=0&frm=284&rt=nc&_trksid=p2047675.l1499&ssPageName=PageSellerM2MFAQ_VI';
+		var title = '';
+		var subTitle = '';
+		var sellerId = 'mrrackables';
+		var domain = 'ebay.com';
+	</script>
+	<table align="center" style="border-spacing: 0px; width: 100%;">
+	<tr>
+		<td>
+			<div id="ds_div">
+							<div align="center">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" WIDTH=750>
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" align="center" background="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_01.jpg" width="290">
+<p style="margin-top: 23">
+<b><font size="3" face="Arial">Supermicro SC809T-980B 1U 2 Node Twin Server X7DWT-INF Barebone LGA771 Socket  </font></b></p>
+</td>
+<td valign="middle" align="center">
+<p>
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_02.jpg" WIDTH=210 HEIGHT=153 ALT=""></p>
+</td>
+<td>
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_03.jpg" WIDTH=250 HEIGHT=153 ALT=""></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<tr>
+<td valign="top" background="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_04.gif">
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_04.gif" width=21 height=17 ALT="">
+</td>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="100%">
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_05.gif" width=208 height=17 ALT=""></td>
+</tr>
+<tr>
+<td width="100%">
+<font size="1" face="Verdana">                    <table border="0" cellpadding="0" cellspacing="0" width="208">
+                      <tr>
+                        <td>
+            <IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_10.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_11.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_12.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_16.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                        <td valign="middle" align="center" bgcolor="#E9EEF2"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=Supermicro_Twin_server_front.jpg&username=itrecyclenow&aid=516065617" target="_blank"><img src="http://thmb.inkfrog.com/thumbn/itrecyclenow/Supermicro_Twin_server_front.jpg" border=0 alt="Click here to Enlarge"></a></font></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_18.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_19.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_20.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_21.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="25" valign="middle" align="center">
+                          <p style="margin-left: 10"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=Supermicro_Twin_server_front.jpg&username=itrecyclenow&aid=516065617" style="text-decoration:none"><font color="#000000">click
+      to Enlarge</font></a></font></td>
+                      </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" width="208">
+                      <tr>
+                        <td>
+            <IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_10.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_11.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_12.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_16.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                        <td valign="middle" align="center" bgcolor="#E9EEF2"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=supermicro_Twin_Server_back.jpg&username=itrecyclenow&aid=516065617" target="_blank"><img src="http://thmb.inkfrog.com/thumbn/itrecyclenow/supermicro_Twin_Server_back.jpg" border=0 alt="Click here to Enlarge"></a></font></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_18.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_19.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_20.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_21.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="25" valign="middle" align="center">
+                          <p style="margin-left: 10"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=supermicro_Twin_Server_back.jpg&username=itrecyclenow&aid=516065617" style="text-decoration:none"><font color="#000000">click
+      to Enlarge</font></a></font></td>
+                      </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" width="208">
+                      <tr>
+                        <td>
+            <IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_10.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_11.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_12.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_16.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                        <td valign="middle" align="center" bgcolor="#E9EEF2"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=Supermicro_Twin_Server_back_close_up.jpg&username=itrecyclenow&aid=516065617" target="_blank"><img src="http://thmb.inkfrog.com/thumbn/itrecyclenow/Supermicro_Twin_Server_back_close_up.jpg" border=0 alt="Click here to Enlarge"></a></font></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_18.gif" WIDTH=4 HEIGHT=200 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_19.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_20.gif" WIDTH=200 HEIGHT=4 ALT=""></td>
+                        <td><IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_21.gif" WIDTH=4 HEIGHT=4 ALT=""></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="25" valign="middle" align="center">
+                          <p style="margin-left: 10"><font size="1" face="Verdana"><a href="http://img.inkfrog.com/click_enlarge1.php?image=Supermicro_Twin_Server_back_close_up.jpg&username=itrecyclenow&aid=516065617" style="text-decoration:none"><font color="#000000">click
+      to Enlarge</font></a></font></td>
+                      </tr>
+                    </table>
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_06.gif" width=40 height=17 ALT=""></td>
+<td valign="top" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" valign="top">
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_06.gif" width=40 height=17 ALT="">
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top">
+<p style="margin-left: 30; margin-bottom: 10"><font size="3" face="Verdana"><b>Description
+:
+</b></font><font size="2" face="Verdana"><br>
+<font size="3"><b>THIS AUCTION IS FOR&nbsp; <font face="arial black" size="4"><font size="3">ONE</font></font> TESTED Dual Twin Node Barebone Servers!</b></font><br /><br />We have tested them and pulled CPU, RAM and Hard Drive.&nbsp; So you can now customize and add your own.<br />The motherboards and power supplies and backplane all work flawlessly<br />This is a low cost solution to build your own servers! WE have QTY in stock Ready to ship!<br /><br /><b><font size="2">Supermicro 1U 2 Node Twin Server X7DWT-INF, <br />No CPU, No RAM, No Hard Drives just use your own source for those and save $$$ <br /><br />or you can request a quote to purchase those parts from us at low low prices also.<br /></font></b><br />This 1U Form factor server is a high performance compact Server it is actually two servers in a 1U Form factor chassis hence the name Twin Server<br /><br />Each sever will come with 2 nodes.<br /><br /><b>Each node will consist of:</b><br /><br /><u><b>Motherboard:</b> </u><br />SuperMicro X7DWT-INF Motherboard this is a small form factor motherboard<br /><b><br /><u>CPU:</u></b><u> </u><br />No CPUs included, you can add your own LGA771 Intel Xeon CPU's&nbsp; it has Dual Sockets (<i>we also sell them if you need it</i>)<br /><b><br /><u>Memory:</u></b><u> </u><br />NO RAM included, you can add your own DDR2 PC2-5300 ECC REG Fully Buffered RAM <i>(We also sell them if you need it) </i><br /><b><br /><u>Hard Drives:</u></b><u> </u><br />Does not come with any drives but does have full (4) Trays 4x 2.5" SATA Bays, can also use SAS bays with a SAS Controller<i> (we also sell them if you need it</i>)<br /><b><br /><u>Power Supply:</u></b><u> </u><br />Shared 980W Power Supply<br /><b><u></u></b><br /><b><br /><u>Rackmount:</u></b><u> </u><br />Each node is installed into main chassis the main chassis has a fixed rackmount rail. <br /><br />Tested 100% working condition any questions<br /><br />any questions please message us or read below for more detailed information<br /><br /><br /><font color="#0000FF" size="3"><b>Chassis: </b></font><br /><br /><img src="http://www.supermicro.com/a_images/products/Chassis/1U/809/SC809T_spec.jpg" height="225" width="261" />
+										<br />										
+									
+									<br />
+										<span class="tertiaryNavSection">Key Features</span><br />
+										
+										<span class="keyFeatures">
+										<b>Supports two systems (nodes) in a 1U form factor. Each node supports: <br /></b></span>
+							            
+										<span class="keyFeatures">1. 980W high-efficiency power supply</span>
+										
+										<span class="keyFeatures"><br />2. 4x hot-swap 2.5" SAS/SATA HDD</span>
+<br />										
+										<span class="keyFeatures">3. Low Profile expansion slot</span>
+<br />										
+										<span class="keyFeatures">4. 3x 4cm counter-rotating fans</span>
+										<br />
+										<span class="keyFeatures">5. Supports twin motherboard size up to:<br />&nbsp;
+										<br />6.8" (173mm) x 18" (457mm)</span>
+										
+										<img src="http://www.supermicro.com/a_images/pixel.gif" alt="" border="0" height="10" width="220" /><br />&nbsp;
+
+						<br /><br /><b><font color="#0000FF" size="3">CPU: <br /></font></b><br /><b>Does not come with CPU but you may install your own LGA771 Socket CPU's <br /><br /></b><br /><br /><br />This Server will come with 2 Motherboard nodes<br /><font color="#3366FF"><b><font size="2">Motherboard: </font></b></font><b>X7DWT-INF</b> (Twin/ Node style motherboard) <br /><br /><img src="http://www.supermicro.com/a_images/products/X64/5000/X7DWT-INF__spec.jpg" alt="X7DWT-INF+" height="270" width="261" /><br />
+                &bull; Quad-Core Xeon 5400 (Seaburg) 1U Twin w/ Infiniband                                                              
+                                <br />
+                                    <span class="tertiaryNavSection">Key Features</span><br />
+                                    
+                                   <span class="keyFeatures">1. Dual Intel&reg; 64-bit Xeon&reg; Quad-Core or <br />
+										 &nbsp;&nbsp;&nbsp; Dual-Core,
+						  with 1600 / 1333 / 1066 MHz<br />  &nbsp;&nbsp;&nbsp; FSB</span>
+                                    
+                                    <br /><span class="keyFeatures"> 2. Intel&reg; 5400 (Seaburg) Chipset</span>
+                                    
+                                    <span class="keyFeatures"> <br />3. Up to 64GB DDR2 800* / 667 / 533 <br />
+                                    &nbsp;&nbsp;&nbsp; SDRAM Fully Buffered DIMM (FB-DIMM)</span>
+                                    
+                                    <br /><span class="keyFeatures"> 4. Intel&reg; (ESB2/Gilgal) 82563EB  Dual-port Gigabit Ethernet Controller</span>
+                                    
+                                    <span class="keyFeatures"> <br />5. 4x SATA 3.0Gbps Ports via ESB2<br />&nbsp;&nbsp;&nbsp; Controller</span>
+                                    
+                                    <span class="keyFeatures"> <br />6. 
+                                    1 (x16) PCI-Express Generation II</span>
+                                    
+                                    <br /><span class="keyFeatures"> 7. ATI ES1000 Graphics with<br />
+                                    &nbsp;&nbsp;32 MB video memory</span>
+                                    
+                                    <span class="keyFeatures"><br />8. SIMSO IPMI 2.0 Slot <br /></span>
+                                    
+									<span class="keyFeatures">9. Mellanox ConnectX IB Infiniband<br /> 
+									&nbsp;&nbsp;&nbsp; 20Gbps PCI-E 2.0 Controller</span>
+                                    
+                                    <img src="http://www.supermicro.com/a_images/pixel.gif" alt="" border="0" height="10" width="220" /><br />
+                                    &nbsp; <b><font size="3"><font color="#0000FF"><br />Power Supply: </font><br /></font></b><br />
+    
+    
+
+		
+<div id="_productMedia_ReviewSummaryModule1__pnlReviewSummary">
+			
+
+  
+
+		</div>
+    
+<div id="_productMedia_ReviewSummaryModule1_popupReviewSummary_pnlOverlay" class="ProductInfoPopup">
+			
+        
+<div id="_productMedia_ReviewSummaryModule1_popupReviewSummary_pnlTitle" class="ProductInfoPopupHeader">
+
+			</div>
+        
+<div id="_productMedia_ReviewSummaryModule1_popupReviewSummary_pnlBody" class="ProductInfoPopupBody">
+
+			</div>
+
+		</div>
+
+       
+          
+                             
+
+
+
+
+
+		
+	
+		
+		
+			
+
+
+
+
+			
+    
+    
+				
+        
+					
+     
+        
+						
+            
+            
+<h1><font size="2"><span id="_primaryProductInformation__titleModule__productName">Supermicro PWS 981-1S - power supply - 980 Watt</span></font></h1>
+            
+							
+								<span id="_primaryProductInformation__titleModule__partNumbersModule_lblPartNumbers">Mfg. Part: PWS-981-1S&nbsp;&nbsp;|&nbsp;&nbsp;CDW Part: 1479340&nbsp;&nbsp;|&nbsp;&nbsp;UNSPSC: 39121004</span><br /><br /><img alt="http://www.supermicro.com/a_images/products/PWS/PWS-981-1S.jpg" src="http://www.supermicro.com/a_images/products/PWS/PWS-981-1S.jpg" height="138" width="220" /><br /><b><font color="#0000FF" size="3"><br />Expansion Slots: </font></b><br /><br />Each node will have a PCI-Express Riser Card for Expansion<br /><br /><br />* * 30 Days Hardware Warranty<br>
+<br>
+<b>Shipping
+:<br>
+</b></font><font size="2" face="Verdana">* $40.00 within lower 48 States. Freight Shipment<br>* $70.00 for quote to Canada, Hawaii and Alaska. <br>* International please email for shipping quote first or check below of cost. <br>* Buyer is responsible for all custom fees and/or import taxes.<br><br>
+<br>
+<b>Payment
+:<br>
+</b></font><font size="2" face="Verdana">* Paypal<br>* Visa, Mastercard, AMEX taken directly from seller<br>* Personal/Company check (Note: Personal/company check will be held 5 business days for clearance.)<br>* Santa Clara County sales tax will be applied if you are a California resident.<br><br><br><br>Terms:<br><br>* Payments must be received within 10 business days after our confirmation was sent to all winning bidder(s). Otherwise, the order is cancelled and the negative feedbacks will be given as result.<br>* All shipping costs are non-refundable for any circumstances.<br>* Buyer pays all freight costs for returning the product(s).<br>* All returned items must be the same condition as shipped in order to receive a refunds. 20% restocking fee applies to customer errors.<br>* Buyer are responsible for all software or software related issues.<br><br><br>Returns (RMA):<br><br>* If you have an issue with your item once it is received, please email through ebay and we will try our best to help resolve the problem.<br>* If your item is in need of a replacement, repair, refund or exchange, please email through ebay for instructions.<br><br><br>Contact:<br>* Phone: 877-864-9123 x122 ASK for ebay Department have ebay item number ready<br>* Business Hour: Monday - Friday 9:00am - 5:00pm PST<br><br><br></font></td>
+</tr>
+</table>
+</td>
+<td valign="top" background="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_08.gif">
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_08.gif" width=41 height=17 ALT=""></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="middle" align="center">
+<p>
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_23.gif" width=250 height=33 ALT=""></p>
+</td>
+<td valign="middle" align="center" background="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_24.gif" width="250">
+<p>
+<font size="1" face="Verdana"><font size=1>&nbsp; </font></font></td>
+<td>
+<IMG SRC="http://resize.inkfrog.com/inkfrogtpl/newtemplates/corporateblue_curvelines/images/corporateblue_curvelines_25.gif" WIDTH=250 HEIGHT=33 ALT=""></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<!--inkFrogLogo Begin--><br /><div class="inkfrog_banner" align="center"><a href="http://www.inkfrog.com/smartlister.php?from=eBay&referer=142922" target="inkfrog"><img src="http://img.inkfrog.com/banners/inkfrog-v2-banner-logo.jpg" alt="inkFrog logo" border="0" /></a><img src="http://img.inkfrog.com/banners/inkfrog-v2-banner-right.jpg" alt="inkFrog logo" border="0" /><div style="display: none;">inkfrog terapeak</div></div><!--inkFrogLogo End--><br><div align="center"><a href="http://www.inkfrog.com" target="inkfrog"><img src="http://counter.inkfrog.com/counter/Counter?iID=323588001" border=0 alt="inkfrog counter"></a></div><br><br><!--InkFrogGalleryShowcaseFlash-->
+<div align="center">
+<script language="JavaScript" type="text/javascript"><!--
+
+function wFlashParam(){
+return '&userName=mrrackables&itemURL='+escape(location.href.substring(0,location.href.lastIndexOf('/') + 1));
+} 
+
+var flashVersion = window.flashVersion ? window.flashVersion : 0;
+if(flashVersion <= 0){
+var agent = navigator.userAgent.toLowerCase();
+if(navigator.plugins != null && navigator.plugins.length > 0){ 
+var flashPlugin = navigator.plugins['Shockwave Flash']; 
+if (typeof flashPlugin == 'object') {
+if (flashPlugin.description.indexOf(' 5.') != -1)
+flashVersion = 5;  
+else if (flashPlugin.description.indexOf(' 4.') != -1)
+flashVersion = 4;  
+else if (flashPlugin.description.indexOf(' 3.') != -1)
+flashVersion = 3;  
+else if (flashPlugin.description.indexOf(' 2.') != -1)
+flashVersion = 2;  
+else if (flashPlugin.description.indexOf(' 1.') != -1)
+flashVersion = 1;  
+else  if (flashPlugin.description.indexOf(' 6.') != -1)
+flashVersion = 6;  
+else  if (flashPlugin.description.indexOf(' 7.') != -1)
+flashVersion = 7;  
+else
+flashVersion = 8;
+}
+}
+else if (agent.indexOf('msie') != -1 && parseInt(navigator.appVersion) >= 4 && agent.indexOf('win')!=-1 && agent.indexOf('16bit')==-1) {
+if (window.sqHasFlash || typeof(window.andale_fv) != 'undefined'){
+if (window.sqHasFlash || andale_fv >= 6){
+flashVersion = 6;
+}
+}
+else{
+document.writeln('<scr' + 'ipt language="VBScript">'); 
+document.writeln('on error resume next'); 
+document.writeln('dim obFlash '); 
+document.writeln('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7")'); 
+document.writeln('if IsObject(obFlash) then ');
+document.writeln('flashVersion = 7 '); 
+document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if ');
+document.writeln('if flashVersion < 7 and IsObject(obFlash) then '); 
+document.writeln('flashVersion = 6 ');
+document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if ');
+document.writeln('if flashVersion < 6 and IsObject(obFlash) then '); 
+document.writeln('flashVersion = 5 ');
+document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if '); 
+document.writeln('if flashVersion < 5 and IsObject(obFlash) then ');
+document.writeln('flashVersion = 4 '); 
+document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if ');  
+document.writeln('if flashVersion < 4 and IsObject(obFlash) then ');  
+document.writeln('flashVersion = 3 ');  
+document.writeln('end if '); 
+document.writeln('</scr' + 'ipt>');
+}
+}
+}
+
+if (flashVersion >= 6){
+document.writeln('<OBJECT classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" WIDTH="639" HEIGHT="420" id="inkfrogWidget" ALIGN="middle">');document.writeln('<PARAM NAME=FlashVars VALUE="'+wFlashParam()+'">');document.writeln('<PARAM NAME=movie VALUE="http://showcase.inkfrog.com/previewerl.swf?userName=mrrackables">');document.writeln('<PARAM NAME=userName VALUE="mrrackables"/>');document.writeln('<PARAM NAME=quality VALUE=high/>'); 
+document.writeln('<PARAM NAME=wmode VALUE=transparent/>'); 
+document.writeln('<PARAM NAME=allowScriptAccess VALUE=always/>');document.writeln('<EMBED src="http://showcase.inkfrog.com/previewerl.swf" FlashVars="'+wFlashParam()+'" quality=high ');document.writeln('WIDTH="639" HEIGHT="420" NAME="inkfrogWidget" ALIGN="middle"');document.writeln('TYPE="application/x-shockwave-flash"');document.writeln('PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">');document.writeln('</EMBED>');
+document.writeln('</OBJECT>');
+}
+else{
+document.write('<a href="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"><img src="http://showcase.inkfrog.com/img/flash_required.gif" border="0" style="width:470px;height:416px;"/></a>');
+}
+//-->
+</script>
+</div>
+<div style="display:none">i000000</div>
+<!--eof InkFrogGalleryShowcaseFlash--></div>
+				</td>
+	</tr>
+</table><span id="closeHtml"></span>
+<script src="http://ir.ebaystatic.com/z/au/b2o4ckknqq4vhch2fknpv0hgt.js" type="text/javascript"></script>
