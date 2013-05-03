@@ -79,20 +79,12 @@ public class GUI extends javax.swing.JFrame {
         label_fileChooser = new javax.swing.JFileChooser();
         product_lbl = new javax.swing.JLabel();
         productID_tf = new javax.swing.JTextField();
-        qty_lbl = new javax.swing.JLabel();
-        qty_tf = new javax.swing.JTextField();
         newLabel_btn = new javax.swing.JButton();
         openLabel_btn = new javax.swing.JButton();
         saveLabel_btn = new javax.swing.JButton();
         printLabel_btn = new javax.swing.JButton();
-        discount_lbl = new javax.swing.JLabel();
-        discountType_cb = new javax.swing.JComboBox();
-        discount_tf = new javax.swing.JTextField();
         priceType_cb = new javax.swing.JComboBox();
         pricingType_lbl = new javax.swing.JLabel();
-        labelPrice_lbl = new javax.swing.JLabel();
-        outputPrice_lbl = new javax.swing.JLabel();
-        profileSelector = new javax.swing.JComboBox();
         file_menuBar = new javax.swing.JMenuBar();
         file_menu = new javax.swing.JMenu();
         newLabel_menuItem = new javax.swing.JMenuItem();
@@ -104,8 +96,9 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pricing Label Creator");
-        setMinimumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(690, 100));
         setName("gui_frame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(690, 50));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -131,12 +124,6 @@ public class GUI extends javax.swing.JFrame {
                 productID_tfKeyTyped(evt);
             }
         });
-
-        qty_lbl.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        qty_lbl.setText("Qty:");
-
-        qty_tf.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        qty_tf.setText("1");
 
         newLabel_btn.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         newLabel_btn.setText("New");
@@ -170,20 +157,6 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        discount_lbl.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        discount_lbl.setText("Discount:");
-
-        discountType_cb.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        discountType_cb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "% ", "$" }));
-
-        discount_tf.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        discount_tf.setText("0.00");
-        discount_tf.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                discount_tfKeyReleased(evt);
-            }
-        });
-
         priceType_cb.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
         priceType_cb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MSRP", "Wholesale", "Distributor" }));
         priceType_cb.addActionListener(new java.awt.event.ActionListener() {
@@ -199,15 +172,6 @@ public class GUI extends javax.swing.JFrame {
 
         pricingType_lbl.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
         pricingType_lbl.setText(" Pricing:");
-
-        labelPrice_lbl.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        labelPrice_lbl.setText("Label Price:");
-
-        outputPrice_lbl.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        outputPrice_lbl.setText("$0.00");
-
-        profileSelector.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
-        profileSelector.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "EZEL", "Ada" }));
 
         file_menu.setText("File");
 
@@ -264,51 +228,29 @@ public class GUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(newLabel_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(product_lbl))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(openLabel_btn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                                .addComponent(saveLabel_btn)
-                                .addGap(18, 18, 18)
-                                .addComponent(printLabel_btn))
-                            .addComponent(productID_tf, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(discount_lbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pricingType_lbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(labelPrice_lbl))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(discount_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(discountType_cb, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(priceType_cb, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(qty_lbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(qty_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(profileSelector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(outputPrice_lbl))
-                .addGap(14, 14, 14))
+                        .addGap(11, 11, 11)
+                        .addComponent(product_lbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(productID_tf))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 18, Short.MAX_VALUE)
+                        .addComponent(newLabel_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(openLabel_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(saveLabel_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(printLabel_btn)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pricingType_lbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(priceType_cb, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {newLabel_btn, openLabel_btn, printLabel_btn, saveLabel_btn});
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {discountType_cb, profileSelector});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -316,36 +258,24 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(qty_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(qty_lbl)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(product_lbl)
-                                .addComponent(productID_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(product_lbl)
+                            .addComponent(productID_tf, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(printLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(discount_lbl)
-                                .addComponent(discount_tf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(discountType_cb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(newLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                .addComponent(openLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                .addComponent(saveLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                .addComponent(profileSelector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(newLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                            .addComponent(openLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                            .addComponent(saveLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                            .addComponent(printLabel_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)))
                     .addComponent(pricingType_lbl)
                     .addComponent(priceType_cb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelPrice_lbl)
-                    .addComponent(outputPrice_lbl))
-                .addGap(0, 0, 0))
+                .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {discountType_cb, discount_tf, newLabel_btn, openLabel_btn, printLabel_btn, productID_tf, profileSelector, qty_tf, saveLabel_btn});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {newLabel_btn, openLabel_btn, printLabel_btn, productID_tf, saveLabel_btn});
 
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-850)/2, (screenSize.height-638)/2, 850, 638);
+        setBounds((screenSize.width-702)/2, (screenSize.height-151)/2, 702, 151);
     }// </editor-fold>//GEN-END:initComponents
 
 private void newLabel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newLabel_btnActionPerformed
@@ -382,10 +312,6 @@ private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event
     createFileDirectory();
     pricingList = new PricingList();
 }//GEN-LAST:event_formWindowOpened
-
-private void discount_tfKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_discount_tfKeyReleased
-// TODO add your handling code here:
-}//GEN-LAST:event_discount_tfKeyReleased
 
 private void productID_tfKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_productID_tfKeyTyped
    int keyCode = evt.getKeyCode();
@@ -489,13 +415,14 @@ private void generatePDF(String fileName) throws DocumentException, FileNotFound
         logoCell.setBorder(0);
         //logoCell.setFixedHeight(70);
          Image pdfLogo;
-        if(this.profileSelector.getSelectedItem().toString().equals("EZEL")){
+        /*if(this.profileSelector.getSelectedItem().toString().equals("EZEL")){
             //File logoFile = new File
             pdfLogo =Image.getInstance("ezellogovert-fat.png");
         } else {
             pdfLogo =Image.getInstance("s:/logos/seattleBookslogo.png");
         }
-        
+        */
+        pdfLogo =Image.getInstance("ezellogovert-fat.png");
         //cell.addElement(pdfLogo);
         logoCell.setImage(pdfLogo);
         
@@ -692,28 +619,20 @@ private void launchLabel(String fileName){
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Profiles;
-    private javax.swing.JComboBox discountType_cb;
-    private javax.swing.JLabel discount_lbl;
-    private javax.swing.JTextField discount_tf;
     private javax.swing.JMenu file_menu;
     private javax.swing.JMenuBar file_menuBar;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JLabel labelPrice_lbl;
     private javax.swing.JFileChooser label_fileChooser;
     private javax.swing.JButton newLabel_btn;
     private javax.swing.JMenuItem newLabel_menuItem;
     private javax.swing.JButton openLabel_btn;
     private javax.swing.JMenuItem openLabel_menuItem;
-    private javax.swing.JLabel outputPrice_lbl;
     private javax.swing.JComboBox priceType_cb;
     private javax.swing.JLabel pricingType_lbl;
     private javax.swing.JButton printLabel_btn;
     private javax.swing.JMenuItem printLabel_menuItem;
     private javax.swing.JTextField productID_tf;
     private javax.swing.JLabel product_lbl;
-    private javax.swing.JComboBox profileSelector;
-    private javax.swing.JLabel qty_lbl;
-    private javax.swing.JTextField qty_tf;
     private javax.swing.JButton saveLabel_btn;
     private javax.swing.JMenuItem saveLabel_menuItem;
     // End of variables declaration//GEN-END:variables
