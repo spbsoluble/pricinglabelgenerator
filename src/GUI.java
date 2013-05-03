@@ -59,6 +59,7 @@ public class GUI extends javax.swing.JFrame {
     private static final int numberOfCols = 7;
     private static boolean productFieldClicked = false;
     private Product currentProduct;
+    private PricingList pricingList;
     Connection dbConnection;
     
     /** Creates new form GUI */
@@ -184,7 +185,12 @@ public class GUI extends javax.swing.JFrame {
         });
 
         priceType_cb.setFont(new java.awt.Font("DialogInput", 0, 18)); // NOI18N
-        priceType_cb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MSRP", "Discount", "Affiliate", "Wholesale" }));
+        priceType_cb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MSRP", "Wholesale", "Distributor" }));
+        priceType_cb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                priceType_cbActionPerformed(evt);
+            }
+        });
         priceType_cb.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
                 priceType_cbPropertyChange(evt);
@@ -344,17 +350,6 @@ public class GUI extends javax.swing.JFrame {
 
 private void newLabel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newLabel_btnActionPerformed
     this.productID_tf.setText("");
-    
-    int rows = this.productList_table.getRowCount();
-    int cols = this.productList_table.getColumnCount();
-    
-    this.productList_table.requestFocusInWindow();
-    this.productList_table.setColumnSelectionInterval(0,0);
-    this.productList_table.setRowSelectionInterval(0,0);
-    
-    //scroll to top row
-    this.productList_table.scrollRectToVisible(new java.awt.Rectangle(0, 0));
-    
     this.productID_tf.requestFocus();
 }//GEN-LAST:event_newLabel_btnActionPerformed
 
@@ -368,7 +363,8 @@ private void saveLabel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 
 private void printLabel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printLabel_btnActionPerformed
         try {
-            loadProduct(this.productID_tf.getText().trim(), this.priceType_cb.getSelectedItem().toString(), this.discount_tf.getText(),this.discountType_cb.getSelectedItem().toString().charAt(0));
+            //loadProduct(this.productID_tf.getText().trim(), this.priceType_cb.getSelectedItem().toString(), this.discount_tf.getText(),this.discountType_cb.getSelectedItem().toString().charAt(0));
+            currentProduct = loadCurrentProduct(this.productID_tf.getText());
             generatePDF(System.getProperty("user.home")+"\\Documents\\Price Labels\\pdfs\\"+currentProduct.getSKU()+"-"+this.priceType_cb.getSelectedItem().toString()+".pdf");
             launchLabel(currentProduct.getSKU()+"-"+this.priceType_cb.getSelectedItem().toString()+".pdf");
         } catch (DocumentException ex) {
@@ -384,8 +380,7 @@ private void printLabel_btnActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
 private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
     createFileDirectory();
-    currentProduct = new Product("EZ-EL 10ft Kit Chase Kits", "KGN10-3V", "850209003292", 20f, 75.99f);
-    establishSQLConnection();
+    pricingList = new PricingList();
 }//GEN-LAST:event_formWindowOpened
 
 private void discount_tfKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_discount_tfKeyReleased
@@ -396,8 +391,8 @@ private void productID_tfKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:even
    int keyCode = evt.getKeyCode();
    System.out.println(keyCode);
    if(keyCode == 0){
-       loadProduct(this.productID_tf.getText(), this.priceType_cb.getSelectedItem().toString(), this.discount_tf.getText(),this.discountType_cb.getSelectedItem().toString().charAt(0));
-       //currentProduct = new Product("EZ-EL 10ft Kit Chase Kit", "KGN10-3V", 20f, 15.99f);
+       
+       
    }
 }//GEN-LAST:event_productID_tfKeyTyped
 
@@ -429,16 +424,15 @@ private void productID_tfFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:e
 }//GEN-LAST:event_productID_tfFocusLost
 
 private void priceType_cbPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_priceType_cbPropertyChange
-    if(!this.productID_tf.getText().trim().equals("")){
-        loadProduct(this.productID_tf.getText(), this.priceType_cb.getSelectedItem().toString(), this.discount_tf.getText(),this.discountType_cb.getSelectedItem().toString().charAt(0));
-    }
+    
 }//GEN-LAST:event_priceType_cbPropertyChange
 
-private void loadProduct (int row){
-    Object [] rowData = new Object[numberOfCols];
-    for(int i = 0; i < numberOfCols; i++){
-        rowData[i] = this.productList_table.getValueAt(row, i);
-    }
+    private void priceType_cbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_priceType_cbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_priceType_cbActionPerformed
+
+private Product loadCurrentProduct(String sku_upc){
+    return pricingList.findProduct(sku_upc);
 }
 
 private boolean createFileDirectory(){
@@ -446,93 +440,11 @@ private boolean createFileDirectory(){
     return (new File(System.getProperty("user.home")+"\\Documents\\Price Labels\\pdfs")).mkdirs();
 }
 
-private void loadProduct (String upc, String pricingType, String discount, char discountType){
-    String findProduct = ""
-            + "SELECT "
-            + "sku, "
-            + "UPC, "
-            + "product_name, "
-            + "msrp, "
-            + "discount_price, "
-            + "affiliate_price,"
-            + "wholesale_price, "
-            + "product_type "
-            + "FROM product_pricing "
-            + "WHERE product_pricing.upc = " + upc;
-            Statement productStatement;
-            
-        try {
-            productStatement = dbConnection.createStatement();
-            ResultSet productRS = productStatement.executeQuery(findProduct);
-            if(productRS.next()){
-                String p_upc = productRS.getString("UPC");
-                String p_sku = productRS.getString("sku");
-                String p_productName = productRS.getString("product_name");
-                int p_msrp = productRS.getInt("msrp");
-                int p_discountPrice = productRS.getInt("discount_price");
-                int p_affiliatePrice = productRS.getInt("affiliate_price");
-                int p_wholesalePrice = productRS.getInt("wholesale_price");
-                
-                int salePrice;
-                pricingType = pricingType.toLowerCase();
-                if(pricingType.equals("discount")){
-                    salePrice = p_discountPrice;
-                } else if(pricingType.equals("affiliate")){
-                    salePrice = p_affiliatePrice;
-                } else if (pricingType.equals("wholesale")){
-                    salePrice = p_wholesalePrice;
-                } else {
-                    salePrice = p_msrp;
-                }
-                
-                float discont = Float.parseFloat(discount);
-                if(discont != 0){
-                    float discountedPrice;
-                    System.out.println(discountType);
-                    System.out.println(p_msrp/100f);
-                    discountedPrice = calculatePrice(p_msrp/100f, discont, discountType);
-                    currentProduct = new Product(p_sku,p_upc,p_productName,p_msrp/100f, discountedPrice);
-                } else {
-                    currentProduct = new Product(p_sku,p_upc,p_productName,p_msrp/100f, salePrice/100f);
-                }
-            }
-        } catch (SQLException ex) {
-            System.err.println(ex);
-        }
-            
-    
-}
 
-/*private Connection connectDB() throws SQLException{
-     Connection conn = null;
-    Properties connectionProps = new Properties();
-    connectionProps.put("user", "unix_ebay");
-    connectionProps.put("password", "un1xsurplus");
-    conn = DriverManager.getConnection(
-                   "jdbc:" + "mysql" + "://" +
-                   "ez-el.com/unix_ebay" +
-                   ":" + "3306" + "/",
-                   connectionProps);
-    
-    System.out.println("Connected to database");
-    return conn;
-}*/
 
- private boolean establishSQLConnection()
- {
-        String connectionString;
-        connectionString = "jdbc:mysql://mysql.ez-el.com/unix_ebay";
-        try 
-        {
-            dbConnection = DriverManager.getConnection(connectionString,"unix_ebay","un1xsurplus!");
-            return true;
-        } catch (SQLException ex) {
-            System.err.println("Can't connect to DB");
-            System.err.println(ex);
-            return false;
-        }
- }
-
+/*
+ * Don't touch this works so well
+ */
 private void generatePDF(String fileName) throws DocumentException, FileNotFoundException, BadElementException, MalformedURLException, IOException{
     Rectangle pageSize = new Rectangle(252,72); //3.5" x 1"
     Document document = new Document(pageSize);
@@ -578,7 +490,8 @@ private void generatePDF(String fileName) throws DocumentException, FileNotFound
         //logoCell.setFixedHeight(70);
          Image pdfLogo;
         if(this.profileSelector.getSelectedItem().toString().equals("EZEL")){
-            pdfLogo =Image.getInstance("s:/logos/ezellogovert-fat.png");
+            //File logoFile = new File
+            pdfLogo =Image.getInstance("ezellogovert-fat.png");
         } else {
             pdfLogo =Image.getInstance("s:/logos/seattleBookslogo.png");
         }
@@ -655,7 +568,15 @@ private void generatePDF(String fileName) throws DocumentException, FileNotFound
         
         
         float msrp = currentProduct.getMSRP();
-        float price = currentProduct.getCalculatedPrice();
+        float price = 0; 
+        
+        if(this.priceType_cb.getSelectedItem().toString().equals("Wholesale")){
+            price = currentProduct.getWholesale();
+        } else if(this.priceType_cb.getSelectedItem().toString().equals("Distributor")) {
+            price = currentProduct.getDistributor();
+        } else {
+            price = msrp;
+        }
         String sku = currentProduct.getSKU();
         
         //fonts
@@ -664,7 +585,12 @@ private void generatePDF(String fileName) throws DocumentException, FileNotFound
         Font skuFont = FontFactory.getFont("Arial", 4, Font.BOLD);
         
         Paragraph priceParagraph = new Paragraph("$"+format.format(price), priceFont);
-        Paragraph msrpParagraph = new Paragraph("MSRP: $"+format.format(msrp),msrpFont);
+        Paragraph msrpParagraph;
+        if(! (price == msrp)){
+            msrpParagraph = new Paragraph("MSRP: $"+format.format(msrp),msrpFont);
+        } else {
+            msrpParagraph = new Paragraph("",msrpFont);
+        }
         Paragraph skuParagraph = new Paragraph(sku, skuFont);
         
         priceParagraph.setAlignment(Element.ALIGN_CENTER);
@@ -690,26 +616,13 @@ private void generatePDF(String fileName) throws DocumentException, FileNotFound
         //add table to document
         document.add(table);
         
-        //title
-        String title = "Hello";
-        if(!(title == null || title.equals(""))){
-            title +=  " - " + "Receiving Log";
-        } else {
-            title = "Receiving Log";
-        }
-        Paragraph pdfTitle = new Paragraph(title,new Font(FontFamily.COURIER,24));
-        
-        pdfTitle.setAlignment(Element.ALIGN_CENTER);
-        
-        //document.add(pdfLogo);  //Logo header
-        //document.add(pdfTitle); //Title Header
-        
-        //document.add(new Paragraph("\n")); //beak line
-        
         writer.setOpenAction(new PdfAction(PdfAction.PRINTDIALOG)); //make it so print dialog opens when pdf opens
         document.close();
 }
 
+/*
+ * Open the label after it has been created in adobe reader
+ */
 private void launchLabel(String fileName){
       if (Desktop.isDesktopSupported()) {
                 try {
@@ -728,27 +641,6 @@ private void launchLabel(String fileName){
                         JOptionPane.ERROR_MESSAGE);
                     return;
                 } 
-    }
-}
-
-private float calculatePrice(float basePrice, float discount, char discountType){
-    if(discount == 0){
-        return basePrice;
-    } else {
-        if(discountType == '%'){    //percentage based discount
-            float multiplier = 100.0f - discount;
-            System.out.println(basePrice + "*" + multiplier/100 + "=" + basePrice*multiplier);
-            return basePrice * (multiplier/100f);
-        } else if (discountType == '$'){    //flat value based discount
-            float discountedPrice = basePrice - discount;
-            if(discountedPrice < 0){    //if discount for whatever reason goes negative then return 0
-                return 0f;
-            } else{     //else return whatever was calculated
-                return discountedPrice;
-            }
-        } else {    //this should never be reached
-            return basePrice;
-        }
     }
 }
 
@@ -825,41 +717,4 @@ private float calculatePrice(float basePrice, float discount, char discountType)
     private javax.swing.JButton saveLabel_btn;
     private javax.swing.JMenuItem saveLabel_menuItem;
     // End of variables declaration//GEN-END:variables
-
-    private class Product {
-        private String productName;
-        private float MSRP;
-        private float calculatedPrice;
-        private String SKU;
-        private String UPC;
-        
-        public Product(String SKU, String UPC, String productName, float MSRP, float calculatedPrice){
-            this.productName = productName;
-            this.SKU = SKU;
-            this.UPC = UPC;
-            this.MSRP = MSRP;
-            this.calculatedPrice = calculatedPrice;
-        }
-        
-        public String getProductName(){
-            return productName;
-        }
-        
-        public String getUPC (){
-            return UPC;
-        }
-        
-        public float getMSRP() {
-            return MSRP;
-        }
-        
-        public float getCalculatedPrice() {
-            return calculatedPrice;
-        }
-        
-        public String getSKU(){
-            return SKU;
-        }
-    }
-    
 }
